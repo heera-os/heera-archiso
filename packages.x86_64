@@ -115,8 +115,8 @@ smartmontools
 usbutils
 
 #DM
+lightdm
 lightdm-gtk-greeter
-lightdm-gtk-greeter-settings
 accountsservice
 
 #heera-desktop
@@ -138,6 +138,8 @@ libwnck3
 network-manager-applet
 galculator
 firefox
+xterm
+xfce4-terminal
 
 #fonts
 cantarell-fonts

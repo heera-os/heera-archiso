@@ -54,7 +54,14 @@ rm /boot/grub/grub.cfg
 chmod -R 700 /root
 chown root:root -R /root
 chown root:root -R /etc/skel
+##Enable system services
+systemctl enable pacman-init.service choose-mirror.service
+systemctl enable lightdm
+systemctl enable NetworkManager
+systemctl enable tlp
 
+##Set graphical for lightdm
+systemctl set-default graphical.target
 chsh -s /bin/bash"
 }
 
